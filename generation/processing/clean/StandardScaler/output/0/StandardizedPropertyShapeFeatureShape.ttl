@@ -1,0 +1,28 @@
+@prefix cb: <https://dtak.upc.edu/IAWO/cbox#> .
+@prefix dmop: <http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix tb: <https://dtak.upc.edu/IAWO/tbox#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cb:StandardizedPropertyShapeFeatureShape
+    a sh:NodeShape ;
+    sh:targetClass dmop:Column ;
+
+    
+
+    sh:or (
+            [
+                sh:property [
+                    a sh:PropertyShape ;
+                    sh:path dmop:isFeature ;
+                    sh:hasValue false;
+                ]
+            ]
+            [
+                sh:property cb:StandardizedPropertyShape;
+            ]
+        ) .

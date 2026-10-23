@@ -1,0 +1,20 @@
+{
+"algorithm_name": {
+    "inputs": [
+        {
+            "feature_properties": ["xPropertyShape", "yPropertyShape"],
+            "label_properties": ["xPropertyShape", "yPropertyShape"],
+            "dataset_properties": ["isTabularDatasetShape"],        
+        }
+    ],
+    "data_outputs": [
+        {
+            "feature_properties": ["xPropertyShape", "yPropertyShape"],
+            "label_properties": ["xPropertyShape", "yPropertyShape"],
+            "dataset_properties": ["xPropertyShape"],        
+        }
+
+    ]
+    "model_output": {"model_type": "ClassificationModel" } 
+}
+}
